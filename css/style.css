@@ -12692,25 +12692,36 @@ h5,
   width: 100%;
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+#resume-section {
+  position: relative;
+  z-index: 1;
+}
+
+#resume-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
 }
 
 .resume-wrap .date {
   font-weight: 900;
-  font-size: 26px;
+  font-size: 13px;
   color: #ffbd39;
 }
 
 .resume-wrap h2 {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .resume-wrap .position {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -13069,7 +13080,7 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 60px 0;
   position: relative;
 }
 
